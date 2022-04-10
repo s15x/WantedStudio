@@ -1,8 +1,4 @@
 # WantedStudio - Welcome
 
-``
-
-Join our Discord
+##Join our Discord
 https://dsc.gg/w4nted
-
-```
