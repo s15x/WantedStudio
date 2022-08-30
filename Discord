@@ -327,8 +327,8 @@ function DiscordLib:Window(text)
 				)
 			else
 				MainFrame:TweenSize(
-					UDim2.new(0, 681, 0, 396),
-					Enum.EasingDirection.In,
+					UDim2.new(0, 681, 0, 22),
+					Enum.EasingDirection.Out,
 					Enum.EasingStyle.Quart,
 					.3,
 					true
