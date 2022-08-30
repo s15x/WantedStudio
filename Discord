@@ -319,15 +319,15 @@ function DiscordLib:Window(text)
 		function()
 			if minimized == false then
 				MainFrame:TweenSize(
-					UDim2.new(0, 681, 0, 22),
+					UDim2.new(0, 0, 0, 0),
 					Enum.EasingDirection.Out,
 					Enum.EasingStyle.Quart,
-					.2,
+					.3,
 					true
 				)
 			else
 				MainFrame:TweenSize(
-					UDim2.new(0, 681, 0, 396),
+					UDim2.new(0, 0, 0, 0),
 					Enum.EasingDirection.Out,
 					Enum.EasingStyle.Quart,
 					.3,
