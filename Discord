@@ -2645,7 +2645,7 @@ function DiscordLib:Window(text)
 					if DropTog == false then
 						DropdownFrameMain.Visible = true
 						DropdownFrameMainOutline.Visible = true
-						Dropdown.Size = UDim2.new(0, 403, 0, 73)
+						Dropdown.Size = UDim2.new(0, 403, 0, 73 + DropdownFrameMainOutline.AbsoluteSize.Y)
 						ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 						
 					else
