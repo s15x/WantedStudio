@@ -327,7 +327,7 @@ function DiscordLib:Window(text)
 				)
 			else
 				MainFrame:TweenSize(
-					UDim2.new(0, 681, 0, 22),
+					UDim2.new(0, 681, 0, 396),
 					Enum.EasingDirection.Out,
 					Enum.EasingStyle.Quart,
 					.3,
@@ -2645,7 +2645,7 @@ function DiscordLib:Window(text)
 					if DropTog == false then
 						DropdownFrameMain.Visible = true
 						DropdownFrameMainOutline.Visible = true
-						Dropdown.Size = UDim2.new(0, 403, 0, 73 + DropdownFrameMainOutline.AbsoluteSize.Y)
+						Dropdown.Size = UDim2.new(0, 403, 0, 73)
 						ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 						
 					else
