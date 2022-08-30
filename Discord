@@ -322,7 +322,7 @@ function DiscordLib:Window(text)
 					UDim2.new(0, 681, 0, 22),
 					Enum.EasingDirection.Out,
 					Enum.EasingStyle.Quart,
-					.3,
+					.2,
 					true
 				)
 			else
