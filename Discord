@@ -9,23 +9,6 @@ local pfp
 local user
 local tag
 local userinfo = {}
-local function getexploit()
-    local exploit =
-        (syn and not is_sirhurt_closure and not pebc_execute and "Synapse X") or 
-        (isexecutorclosure and "Script-Ware V2") or
-        (secure_load and "Sentinel") or
-        (is_sirhurt_closure and "SirHurt V4") or
-        (pebc_execute and "ProtoSmasher") or
-        (KRNL_LOADED and "Krnl") or
-        (WrapGlobal and "WeAreDevs") or
-        (isvm and "Proxo") or
-        (shadow_env and "Shadow") or
-        (jit and "EasyExploits") or
-        (getreg()['CalamariLuaEnv'] and "Calamari") or
-        (unit and "Unit") or
-        ("Undetectable")
-    return exploit
-end
 
 pcall(function()
 	userinfo = HttpService:JSONDecode(readfile("discordlibinfo.txt"));
@@ -1135,7 +1118,7 @@ function DiscordLib:Window(text)
 	DiscordInfo.Position = UDim2.new(0.304721028, 0, 0.821333349, 0)
 	DiscordInfo.Size = UDim2.new(0, 133, 0, 44)
 	DiscordInfo.Font = Enum.Font.Gotham
-	DiscordInfo.Text = "Stable 1.0.0 (00001)  Host getexploit()               FlerixHub Lua Engine"    "
+	DiscordInfo.Text = "Stable 1.0.0 (00001)  Host 0.0.0.1                FlerixHub Lua Engine    "
 	DiscordInfo.TextColor3 = Color3.fromRGB(101, 108, 116)
 	DiscordInfo.TextSize = 13.000
 	DiscordInfo.TextWrapped = true
