@@ -122,6 +122,7 @@ function DiscordLib:Window(text)
 	MainFrame.ClipsDescendants = true
 	MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 	MainFrame.Size = UDim2.new(0, 681, 0, 396)
+	MainFrame.Visible = true
 
 	UICorner.Parent = MainFrame
 
@@ -293,13 +294,13 @@ function DiscordLib:Window(text)
 
 	CloseBtn.MouseButton1Click:Connect(
 		function()
-			MainFrame:Visible = flase
+			MainFrame.Visible = flase
 		end
 	)
 
 	game:GetService("UserInputService").InputBegan:Connect(function(key,isTyping)
 		if not isTyping and key.KeyCode == Enum.KeyCode[#] then
-			MainFrame:Visible = true
+			MainFrame.Visible = true
 		end
 		)
 
