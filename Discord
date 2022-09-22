@@ -11,7 +11,7 @@ local tag
 local userinfo = {}
 
 pcall(function()
-	userinfo = HttpService:JSONDecode(readfile("discordlibinfo.txt"));
+	userinfo = HttpService:JSONDecode(readfile("discordlibinfo2.txt"));
 end)
 
 pfp = userinfo["pfp"] or "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png"
@@ -892,7 +892,7 @@ function DiscordLib:Window(text,keycode)
 		end)
 
 		ChangeBtn.MouseButton1Click:Connect(function()
-			pfp = tostring(AvatarTextbox.Text)
+			pfp = "http://www.roblox.com/asset/?id=".. tostring(AvatarTextbox.Text)
 			UserImage.Image = pfp 
 			UserPanelUserImage.Image = pfp
 			SaveInfo()
