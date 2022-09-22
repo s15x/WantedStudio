@@ -1924,7 +1924,7 @@ function DiscordLib:Window(text,keycode)
 					TweenService:Create(
 						Server,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(88, 101, 242)}
+						{BackgroundColor3 = Color3.fromRGB(36, 93, 228)}
 					):Play()
 					TweenService:Create(
 						ServerBtnCorner,
