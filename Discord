@@ -515,6 +515,10 @@ function DiscordLib:Window(text)
 	end
 	)
 
+	SettingHolder:Bind("Z", Enum.KeyCode.Z, function()
+		[KeyCode]
+		end)
+
 	CloseSettingsBtn.Name = "CloseSettingsBtn"
 	CloseSettingsBtn.Parent = SettingsHolder
 	CloseSettingsBtn.AnchorPoint = Vector2.new(0.5, 0.5)
