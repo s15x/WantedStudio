@@ -879,7 +879,7 @@ function DiscordLib:Window(text,keycode)
 			TweenService:Create(
 				ChangeBtn,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(0, 70, 232)}
+				{BackgroundColor3 = Color3.fromRGB(0, 64, 213)}
 			):Play()
 		end)
 
@@ -1377,7 +1377,7 @@ function DiscordLib:Window(text,keycode)
 			TweenService:Create(
 				ChangeBtn,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(68,78,189)}
+				{BackgroundColor3 = Color3.fromRGB(0, 64, 213)}
 			):Play()
 		end)
 		
@@ -1677,7 +1677,7 @@ function DiscordLib:Window(text,keycode)
 			TweenService:Create(
 				AlrightBtn,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(0, 70, 232)}
+				{BackgroundColor3 = Color3.fromRGB(0, 64, 213)}
 			):Play()
 		end)
 
@@ -2182,7 +2182,7 @@ function DiscordLib:Window(text,keycode)
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(68,78,189)}
+						{BackgroundColor3 = Color3.fromRGB(0, 64, 213)}
 					):Play()
 				end)
 				
