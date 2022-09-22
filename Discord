@@ -86,7 +86,7 @@ Discord.Name = "Discord"
 Discord.Parent = game.CoreGui
 Discord.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-function DiscordLib:Window(text,keycode)
+function DiscordLib:Window(text, keycode)
 	local currentservertoggled = ""
 	local minimized = false
 	local fs = false
@@ -298,7 +298,7 @@ function DiscordLib:Window(text,keycode)
 	)
 
 	game:GetService("UserInputService").InputBegan:Connect(function(key,isTyping)
-		if not isTyping and key.KeyCode == Enum.KeyCode[keycode] then
+		if not isTyping and key.KeyCode == Enum.KeyCode.[keycode] then
 			if minimized == false then
 				MainFrame:TweenSize(
 					UDim2.new(0, 681, 0, 22),
