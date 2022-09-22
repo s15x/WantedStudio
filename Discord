@@ -86,7 +86,8 @@ Discord.Name = "Discord"
 Discord.Parent = game.CoreGui
 Discord.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-function DiscordLib:Window(text, keycode)
+function DiscordLib:Window(text)
+function DiscordLib:Key(keycode)
 	local currentservertoggled = ""
 	local minimized = false
 	local fs = false
