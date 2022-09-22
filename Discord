@@ -298,7 +298,7 @@ function DiscordLib:Window(text)
 	)
 
 	game:GetService("UserInputService").InputBegan:Connect(function(key,isTyping)
-		if not isTyping and key.KeyCode == Enum.KeyCode.# then
+		if not isTyping and key.KeyCode == Enum.KeyCode.Z then
 			if minimized == false then
 				MainFrame:TweenSize(
 					UDim2.new(0, 681, 0, 22),
