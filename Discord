@@ -123,6 +123,8 @@ function DiscordLib:Window(text)
 	MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 	MainFrame.Size = UDim2.new(0, 681, 0, 396)
 
+	UICorner.Parent = MainFrame
+
 	TopFrame.Name = "TopFrame"
 	TopFrame.Parent = MainFrame
 	TopFrame.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
@@ -130,8 +132,6 @@ function DiscordLib:Window(text)
 	TopFrame.BorderSizePixel = 0
 	TopFrame.Position = UDim2.new(-0.000658480625, 0, 0, 0)
 	TopFrame.Size = UDim2.new(0, 681, 0, 22)
-
-	UICorner.Parent = TopFrame
 
 	TopFrameHolder.Name = "TopFrameHolder"
 	TopFrameHolder.Parent = TopFrame
@@ -367,6 +367,7 @@ function DiscordLib:Window(text)
 	SettingsOpenBtnIco.ImageColor3 = Color3.fromRGB(220, 220, 220)
 	local SettingsFrame = Instance.new("Frame")
 	local Settings = Instance.new("Frame")
+	local UICorner = Instance.new("UICorner")
 	local SettingsHolder = Instance.new("Frame")
 	local CloseSettingsBtn = Instance.new("TextButton")
 	local CloseSettingsBtnCorner = Instance.new("UICorner")
@@ -399,6 +400,7 @@ function DiscordLib:Window(text)
 	local UserPanelTag = Instance.new("TextLabel")
 	local UserPanelCorner = Instance.new("UICorner")
 	local LeftFrame = Instance.new("Frame")
+	local UICorner_2 = Instance.new("UICorner")
 	local MyAccountBtn = Instance.new("TextButton")
 	local MyAccountBtnCorner = Instance.new("UICorner")
 	local MyAccountBtnTitle = Instance.new("TextLabel")
@@ -419,6 +421,8 @@ function DiscordLib:Window(text)
 	Settings.BorderSizePixel = 0
 	Settings.Position = UDim2.new(0, 0, 0.0530303046, 0)
 	Settings.Size = UDim2.new(0, 681, 0, 375)
+
+	UICorner.Parent = Settings
 
 	SettingsHolder.Name = "SettingsHolder"
 	SettingsHolder.Parent = Settings
@@ -1075,6 +1079,8 @@ function DiscordLib:Window(text)
 	LeftFrame.BorderSizePixel = 0
 	LeftFrame.Position = UDim2.new(0, 0, -0.000303059904, 0)
 	LeftFrame.Size = UDim2.new(0, 233, 0, 375)
+
+	UICorner.Parent = LeftFrame
 
 	MyAccountBtn.Name = "MyAccountBtn"
 	MyAccountBtn.Parent = LeftFrame
