@@ -892,7 +892,7 @@ function DiscordLib:Window(text,keycode)
 		end)
 
 		ChangeBtn.MouseButton1Click:Connect(function()
-			pfp = tostring(AvatarTextbox.Text)
+			pfp = "http://www.roblox.com/asset/?id=" .. tostring(AvatarTextbox.Text)
 			UserImage.Image = pfp 
 			UserPanelUserImage.Image = pfp
 			SaveInfo()
