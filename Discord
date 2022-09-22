@@ -297,12 +297,6 @@ function DiscordLib:Window(text)
 		end
 	)
 
-	game:GetService("UserInputService").InputBegan:Connect(function(key,isTyping)
-		if not isTyping and key.KeyCode == Enum.KeyCode[#] then
-			MainFrame:TweenSize(UDim2.new(0, 681, 0, 22), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
-		end
-		)
-
 	CloseBtn.MouseEnter:Connect(
 		function()
 			CloseBtn.BackgroundColor3 = Color3.fromRGB(240, 71, 71)
