@@ -93,8 +93,10 @@ function DiscordLib:Window(text)
 	local settingsopened = false
 	local MainFrame = Instance.new("Frame")
 	local TopFrame = Instance.new("Frame")
+	local TopFrameCorner = Instance.new("UICorner")
 	local Title = Instance.new("TextLabel")
 	local CloseBtn = Instance.new("TextButton")
+	local CloseBtnCorner = Instance.new("UICorner")
 	local CloseIcon = Instance.new("ImageLabel")
 	local MinimizeBtn = Instance.new("TextButton")
 	local MinimizeIcon = Instance.new("ImageLabel")
@@ -129,6 +131,8 @@ function DiscordLib:Window(text)
 	TopFrame.Position = UDim2.new(-0.000658480625, 0, 0, 0)
 	TopFrame.Size = UDim2.new(0, 681, 0, 22)
 	
+	UICorner.Parent = TopFrame
+
 	TopFrameHolder.Name = "TopFrameHolder"
 	TopFrameHolder.Parent = TopFrame
 	TopFrameHolder.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
@@ -161,6 +165,8 @@ function DiscordLib:Window(text)
 	CloseBtn.TextSize = 14.000
 	CloseBtn.BorderSizePixel = 0
 	CloseBtn.AutoButtonColor = false
+
+	UICorner.Parent = CloseBtn
 
 	CloseIcon.Name = "CloseIcon"
 	CloseIcon.Parent = CloseBtn
