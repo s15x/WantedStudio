@@ -293,9 +293,15 @@ function DiscordLib:Window(text)
 
 	CloseBtn.MouseButton1Click:Connect(
 		function()
-			MainFrame:TweenSize(UDim2.new(0, 0, 0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
+			MainFrame:Visible = flase
 		end
 	)
+
+	game:GetService("UserInputService").InputBegan:Connect(function(key,isTyping)
+		if not isTyping and key.KeyCode == Enum.KeyCode[#] then
+			MainFrame:Visible = true
+		end
+		)
 
 	CloseBtn.MouseEnter:Connect(
 		function()
