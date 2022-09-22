@@ -318,7 +318,7 @@ function DiscordLib:Window(text)
 			end
 			minimized = not minimized
 		end
-		)
+	end)
 
 	CloseBtn.MouseEnter:Connect(
 		function()
