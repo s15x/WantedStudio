@@ -82,11 +82,18 @@ local function MakeDraggable(topbarobject, object)
 end
 
 local Discord = Instance.new("ScreenGui")
-Discord.Name = "Discord"
+Discord.Name = "FXHUB"
 Discord.Parent = game.CoreGui
 Discord.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 function DiscordLib:Window(text,keycode)
+		pcall(function()
+			for i,v in next,game.CoreGui:GetChildren() do
+				if v.Name == "FXHUB" then
+					v:Destroy()
+				end
+			end
+		end)
 	local currentservertoggled = ""
 	local minimized = false
 	local fs = false
