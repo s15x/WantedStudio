@@ -440,7 +440,7 @@ function DiscordLib:Window(text,keycode)
 
 	Settings.Name = "Settings"
 	Settings.Parent = SettingsFrame
-	Settings.BackgroundColor3 = Color3.fromRGB(39, 41, 45)
+	Settings.BackgroundColor3 = Color3.fromRGB(33, 34, 37)
 	Settings.BorderSizePixel = 0
 	Settings.Position = UDim2.new(0, 0, 0.0530303046, 0)
 	Settings.Size = UDim2.new(0, 681, 0, 375)
@@ -475,7 +475,7 @@ function DiscordLib:Window(text,keycode)
 
 	CloseSettingsBtnCircle.Name = "CloseSettingsBtnCircle"
 	CloseSettingsBtnCircle.Parent = CloseSettingsBtn
-	CloseSettingsBtnCircle.BackgroundColor3 = Color3.fromRGB(39, 41, 45)
+	CloseSettingsBtnCircle.BackgroundColor3 = Color3.fromRGB(33, 34, 37)
 	CloseSettingsBtnCircle.Position = UDim2.new(0.0879999995, 0, 0.118000001, 0)
 	CloseSettingsBtnCircle.Size = UDim2.new(0, 24, 0, 24)
 
@@ -518,7 +518,7 @@ function DiscordLib:Window(text,keycode)
 	end)
 
 	CloseSettingsBtn.MouseLeave:Connect(function()
-		CloseSettingsBtnCircle.BackgroundColor3 = Color3.fromRGB(39, 41, 45)
+		CloseSettingsBtnCircle.BackgroundColor3 = Color3.fromRGB(33, 34, 37)
 	end)
 	
 	UserInputService.InputBegan:Connect(
@@ -566,7 +566,7 @@ function DiscordLib:Window(text,keycode)
 
 	UserSettingsPad.Name = "UserSettingsPad"
 	UserSettingsPad.Parent = UserPanel
-	UserSettingsPad.BackgroundColor3 = Color3.fromRGB(39, 41, 45)
+	UserSettingsPad.BackgroundColor3 = Color3.fromRGB(33, 34, 37)
 	UserSettingsPad.Position = UDim2.new(0.0331491716, 0, 0.568140388, 0)
 	UserSettingsPad.Size = UDim2.new(0, 337, 0, 56)
 
@@ -772,7 +772,7 @@ function DiscordLib:Window(text,keycode)
 		AvatarChange.Name = "AvatarChange"
 		AvatarChange.Parent = NotificationHolder
 		AvatarChange.AnchorPoint = Vector2.new(0.5, 0.5)
-		AvatarChange.BackgroundColor3 = Color3.fromRGB(39, 41, 45)
+		AvatarChange.BackgroundColor3 = Color3.fromRGB(33, 34, 37)
 		AvatarChange.ClipsDescendants = true
 		AvatarChange.Position = UDim2.new(0.513071597, 0, 0.4746176, 0)
 		AvatarChange.Size = UDim2.new(0, 0, 0, 0)
@@ -1240,7 +1240,7 @@ function DiscordLib:Window(text,keycode)
 		UserChange.Name = "UserChange"
 		UserChange.Parent = NotificationHolder
 		UserChange.AnchorPoint = Vector2.new(0.5, 0.5)
-		UserChange.BackgroundColor3 = Color3.fromRGB(39, 41, 45)
+		UserChange.BackgroundColor3 = Color3.fromRGB(33, 34, 37)
 		UserChange.ClipsDescendants = true
 		UserChange.Position = UDim2.new(0.513071597, 0, 0.4746176, 0)
 		UserChange.Size = UDim2.new(0, 0, 0, 0)
@@ -1584,7 +1584,7 @@ function DiscordLib:Window(text,keycode)
 		Notification.Name = "Notification"
 		Notification.Parent = NotificationHolderMain
 		Notification.AnchorPoint = Vector2.new(0.5, 0.5)
-		Notification.BackgroundColor3 = Color3.fromRGB(39, 41, 45)
+		Notification.BackgroundColor3 = Color3.fromRGB(33, 34, 37)
 		Notification.ClipsDescendants = true
 		Notification.Position = UDim2.new(0.524819076, 0, 0.469270051, 0)
 		Notification.Size = UDim2.new(0, 0, 0, 0)
@@ -1836,7 +1836,7 @@ function DiscordLib:Window(text,keycode)
 
 		ChannelTitleFrame.Name = "ChannelTitleFrame"
 		ChannelTitleFrame.Parent = ServerFrame
-		ChannelTitleFrame.BackgroundColor3 = Color3.fromRGB(39, 41, 45)
+		ChannelTitleFrame.BackgroundColor3 = Color3.fromRGB(33, 34, 37)
 		ChannelTitleFrame.BorderSizePixel = 0
 		ChannelTitleFrame.Position = UDim2.new(0.294561088, 0, -0.000900391256, 0)
 		ChannelTitleFrame.Size = UDim2.new(0, 429, 0, 40)
@@ -1868,7 +1868,7 @@ function DiscordLib:Window(text,keycode)
 
 		ChannelContentFrame.Name = "ChannelContentFrame"
 		ChannelContentFrame.Parent = ServerFrame
-		ChannelContentFrame.BackgroundColor3 = Color3.fromRGB(39, 41, 45)
+		ChannelContentFrame.BackgroundColor3 = Color3.fromRGB(33, 34, 37)
 		ChannelContentFrame.BorderSizePixel = 0
 		ChannelContentFrame.ClipsDescendants = true
 		ChannelContentFrame.Position = UDim2.new(0.294561088, 0, 0.106338218, 0)
@@ -2217,7 +2217,7 @@ function DiscordLib:Window(text,keycode)
 
 				Toggle.Name = "Toggle"
 				Toggle.Parent = ChannelHolder
-				Toggle.BackgroundColor3 = Color3.fromRGB(39, 41, 45)
+				Toggle.BackgroundColor3 = Color3.fromRGB(33, 34, 37)
 				Toggle.BorderSizePixel = 0
 				Toggle.Position = UDim2.new(0.261979163, 0, 0.190789461, 0)
 				Toggle.Size = UDim2.new(0, 401, 0, 30)
@@ -2347,7 +2347,7 @@ function DiscordLib:Window(text,keycode)
 
 				Slider.Name = "Slider"
 				Slider.Parent = ChannelHolder
-				Slider.BackgroundColor3 = Color3.fromRGB(39, 41, 45)
+				Slider.BackgroundColor3 = Color3.fromRGB(33, 34, 37)
 				Slider.BorderSizePixel = 0
 				Slider.Position = UDim2.new(0, 0, 0.216560602, 0)
 				Slider.Size = UDim2.new(0, 401, 0, 38)
@@ -2912,7 +2912,7 @@ function DiscordLib:Window(text,keycode)
 
 				ColorpickerFrame.Name = "ColorpickerFrame"
 				ColorpickerFrame.Parent = ColorpickerTitle
-				ColorpickerFrame.BackgroundColor3 = Color3.fromRGB(39, 41, 45)
+				ColorpickerFrame.BackgroundColor3 = Color3.fromRGB(33, 34, 37)
 				ColorpickerFrame.ClipsDescendants = true
 				ColorpickerFrame.Position = UDim2.new(0.00999999978, 0, 1.06638515, 0)
 				ColorpickerFrame.Selectable = true
@@ -3184,7 +3184,7 @@ function DiscordLib:Window(text,keycode)
 
 				Label.Name = "Label"
 				Label.Parent = ChannelHolder
-				Label.BackgroundColor3 = Color3.fromRGB(39, 41, 45)
+				Label.BackgroundColor3 = Color3.fromRGB(33, 34, 37)
 				Label.BorderSizePixel = 0
 				Label.Position = UDim2.new(0.261979163, 0, 0.190789461, 0)
 				Label.Size = UDim2.new(0, 401, 0, 30)
@@ -3217,7 +3217,7 @@ function DiscordLib:Window(text,keycode)
 
 				Keybind.Name = "Keybind"
 				Keybind.Parent = ChannelHolder
-				Keybind.BackgroundColor3 = Color3.fromRGB(39, 41, 45)
+				Keybind.BackgroundColor3 = Color3.fromRGB(33, 34, 37)
 				Keybind.BorderSizePixel = 0
 				Keybind.Position = UDim2.new(0.261979163, 0, 0.190789461, 0)
 				Keybind.Size = UDim2.new(0, 401, 0, 30)
