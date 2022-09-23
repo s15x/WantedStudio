@@ -1,6 +1,6 @@
 pcall(function()
 	for i,v in next,game.CoreGui:GetChildren() do
-		if v.Name == "LibraryUI" then
+		if v.Name == "Discord" then
 			v:Destroy()
 		end
 	end
