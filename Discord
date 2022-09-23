@@ -2154,7 +2154,7 @@ function DiscordLib:Window(text,keycode)
 			if fc == false then
 				fc = true
 				ChannelTitle.Text = text
-				ChannelBtn.BackgroundColor3 = Color3.fromRGB(57,60,67)
+				ChannelBtn.BackgroundColor3 = Color3.fromRGB(38, 40, 42)
 				ChannelBtnTitle.TextColor3 = Color3.fromRGB(255,255,255)
 				currentchanneltoggled = ChannelBtn.Name
 				ChannelHolder.Visible = true
