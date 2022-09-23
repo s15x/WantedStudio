@@ -873,7 +873,7 @@ function DiscordLib:Window(text,keycode)
 
 		ChangeBtn.Name = "ChangeBtn"
 		ChangeBtn.Parent = AvatarChange
-		ChangeBtn.BackgroundColor3 = Color3.fromRGB(16, 88, 255)
+		ChangeBtn.BackgroundColor3 = Color3.fromRGB(28, 46, 74)
 		ChangeBtn.Position = UDim2.new(0.749670506, 0, 0.823232353, 0)
 		ChangeBtn.Size = UDim2.new(0, 76, 0, 27)
 		ChangeBtn.Font = Enum.Font.Gotham
@@ -886,7 +886,7 @@ function DiscordLib:Window(text,keycode)
 			TweenService:Create(
 				ChangeBtn,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(0, 64, 213)}
+				{BackgroundColor3 = Color3.fromRGB(24, 39, 63)}
 			):Play()
 		end)
 
@@ -894,7 +894,7 @@ function DiscordLib:Window(text,keycode)
 			TweenService:Create(
 				ChangeBtn,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(16, 88, 255)}
+				{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
 			):Play()
 		end)
 
@@ -947,7 +947,7 @@ function DiscordLib:Window(text,keycode)
 
 		CloseBtn1.Name = "CloseBtn1"
 		CloseBtn1.Parent = AvatarChange
-		CloseBtn1.BackgroundColor3 = Color3.fromRGB(16, 88, 255)
+		CloseBtn1.BackgroundColor3 = Color3.fromRGB(28, 46, 74)
 		CloseBtn1.BackgroundTransparency = 1.000
 		CloseBtn1.Position = UDim2.new(0.495000005, 0, 0.823000014, 0)
 		CloseBtn1.Size = UDim2.new(0, 76, 0, 27)
@@ -962,7 +962,7 @@ function DiscordLib:Window(text,keycode)
 
 		ResetBtn.Name = "ResetBtn"
 		ResetBtn.Parent = AvatarChange
-		ResetBtn.BackgroundColor3 = Color3.fromRGB(16, 88, 255)
+		ResetBtn.BackgroundColor3 = Color3.fromRGB(28, 46, 74)
 		ResetBtn.BackgroundTransparency = 1.000
 		ResetBtn.Position = UDim2.new(0.260895967, 0, 0.823000014, 0)
 		ResetBtn.Size = UDim2.new(0, 76, 0, 27)
@@ -1049,7 +1049,7 @@ function DiscordLib:Window(text,keycode)
 			TweenService:Create(
 				TextBoxFrame,
 				TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(16, 88, 255)}
+				{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
 			):Play()
 		end)
 
@@ -1371,7 +1371,7 @@ function DiscordLib:Window(text,keycode)
 
 		ChangeBtn.Name = "ChangeBtn"
 		ChangeBtn.Parent = UserChange
-		ChangeBtn.BackgroundColor3 = Color3.fromRGB(16, 88, 255)
+		ChangeBtn.BackgroundColor3 = Color3.fromRGB(28, 46, 74)
 		ChangeBtn.Position = UDim2.new(0.749670506, 0, 0.823232353, 0)
 		ChangeBtn.Size = UDim2.new(0, 76, 0, 27)
 		ChangeBtn.Font = Enum.Font.Gotham
@@ -1384,7 +1384,7 @@ function DiscordLib:Window(text,keycode)
 			TweenService:Create(
 				ChangeBtn,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(0, 64, 213)}
+				{BackgroundColor3 = Color3.fromRGB(24, 39, 63)}
 			):Play()
 		end)
 		
@@ -1392,7 +1392,7 @@ function DiscordLib:Window(text,keycode)
 			TweenService:Create(
 				ChangeBtn,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(16, 88, 255)}
+				{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
 			):Play()
 		end)
 		
@@ -1450,7 +1450,7 @@ function DiscordLib:Window(text,keycode)
 
 		CloseBtn1.Name = "CloseBtn1"
 		CloseBtn1.Parent = UserChange
-		CloseBtn1.BackgroundColor3 = Color3.fromRGB(16, 88, 255)
+		CloseBtn1.BackgroundColor3 = Color3.fromRGB(28, 46, 74)
 		CloseBtn1.BackgroundTransparency = 1.000
 		CloseBtn1.Position = UDim2.new(0.495000005, 0, 0.823000014, 0)
 		CloseBtn1.Size = UDim2.new(0, 76, 0, 27)
@@ -1527,7 +1527,7 @@ function DiscordLib:Window(text,keycode)
 			TweenService:Create(
 				TextBoxFrame,
 				TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(16, 88, 255)}
+				{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
 			):Play()
 		end)
 		
@@ -1543,7 +1543,7 @@ function DiscordLib:Window(text,keycode)
 			TweenService:Create(
 				TextBoxFrame,
 				TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(16, 88, 255)}
+				{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
 			):Play()
 		end)
 
@@ -1651,7 +1651,7 @@ function DiscordLib:Window(text,keycode)
 
 		AlrightBtn.Name = "AlrightBtn"
 		AlrightBtn.Parent = Notification
-		AlrightBtn.BackgroundColor3 = Color3.fromRGB(16, 88, 255)
+		AlrightBtn.BackgroundColor3 = Color3.fromRGB(28, 46, 74)
 		AlrightBtn.Position = UDim2.new(0.0332369953, 0, 0.789141417, 0)
 		AlrightBtn.Size = UDim2.new(0, 322, 0, 27)
 		AlrightBtn.Font = Enum.Font.Gotham
@@ -1684,7 +1684,7 @@ function DiscordLib:Window(text,keycode)
 			TweenService:Create(
 				AlrightBtn,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(0, 64, 213)}
+				{BackgroundColor3 = Color3.fromRGB(24, 39, 63)}
 			):Play()
 		end)
 
@@ -1692,7 +1692,7 @@ function DiscordLib:Window(text,keycode)
 			TweenService:Create(
 				AlrightBtn,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(16, 88, 255)}
+				{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
 			):Play()
 		end)
 	end
@@ -1931,7 +1931,7 @@ function DiscordLib:Window(text,keycode)
 					TweenService:Create(
 						Server,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(16, 88, 255)}
+						{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
 					):Play()
 					TweenService:Create(
 						ServerBtnCorner,
@@ -1992,7 +1992,7 @@ function DiscordLib:Window(text,keycode)
 						TweenService:Create(
 							Server,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{BackgroundColor3 = Color3.fromRGB(16, 88, 255)}
+							{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
 						):Play()
 						TweenService:Create(
 							v.ServerCorner,
@@ -2033,7 +2033,7 @@ function DiscordLib:Window(text,keycode)
 			TweenService:Create(
 				Server,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(16, 88, 255)}
+				{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
 			):Play()
 			TweenService:Create(
 				ServerBtnCorner,
@@ -2173,7 +2173,7 @@ function DiscordLib:Window(text,keycode)
 
 				Button.Name = "Button"
 				Button.Parent = ChannelHolder
-				Button.BackgroundColor3 = Color3.fromRGB(16, 88, 255)
+				Button.BackgroundColor3 = Color3.fromRGB(28, 46, 74)
 				Button.Size = UDim2.new(0, 401, 0, 30)
 				Button.AutoButtonColor = false
 				Button.Font = Enum.Font.Gotham
@@ -2189,7 +2189,7 @@ function DiscordLib:Window(text,keycode)
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(0, 64, 213)}
+						{BackgroundColor3 = Color3.fromRGB(24, 39, 63)}
 					):Play()
 				end)
 				
@@ -2207,7 +2207,7 @@ function DiscordLib:Window(text,keycode)
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(16, 88, 255)}
+						{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
 					):Play()
 				end)
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
@@ -2388,7 +2388,7 @@ function DiscordLib:Window(text,keycode)
 
 				CurrentValueFrame.Name = "CurrentValueFrame"
 				CurrentValueFrame.Parent = SliderFrame
-				CurrentValueFrame.BackgroundColor3 = Color3.fromRGB(16, 88, 255)
+				CurrentValueFrame.BackgroundColor3 = Color3.fromRGB(28, 46, 74)
 				CurrentValueFrame.Size = UDim2.new((start or 0) / max, 0, 0, 8)
 
 				CurrentValueFrameCorner.Name = "CurrentValueFrameCorner"
@@ -3162,7 +3162,7 @@ function DiscordLib:Window(text,keycode)
 					TweenService:Create(
 						TextboxFrameOutline,
 						TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(16, 88, 255)}
+						{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
 					):Play()
 				end)
 				
