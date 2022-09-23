@@ -2119,7 +2119,7 @@ function DiscordLib:Window(text,keycode)
 			
 			ChannelBtn.MouseEnter:Connect(function()
 				if currentchanneltoggled ~= ChannelBtn.Name then
-				ChannelBtn.BackgroundColor3 = Color3.fromRGB(49, 51, 54)
+				ChannelBtn.BackgroundColor3 = Color3.fromRGB(38, 40, 42)
 					ChannelBtnTitle.TextColor3 = Color3.fromRGB(220,221,222)
 				end
 			end)
@@ -2146,7 +2146,7 @@ function DiscordLib:Window(text,keycode)
 					ServerFrame.Visible = true
 				end
 				ChannelTitle.Text = text
-				ChannelBtn.BackgroundColor3 = Color3.fromRGB(49, 51, 54)
+				ChannelBtn.BackgroundColor3 = Color3.fromRGB(38, 40, 42)
 				ChannelBtnTitle.TextColor3 = Color3.fromRGB(255,255,255)
 				currentchanneltoggled = ChannelBtn.Name
 			end)
