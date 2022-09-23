@@ -2372,7 +2372,7 @@ function DiscordLib:Window(text,keycode)
 				SliderFrame.Name = "SliderFrame"
 				SliderFrame.Parent = Slider
 				SliderFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-				SliderFrame.BackgroundColor3 = Color3.fromRGB(79, 84, 92)
+				SliderFrame.BackgroundColor3 = Color3.fromRGB(49, 51, 54)
 				SliderFrame.Position = UDim2.new(0.497999996, 0, 0.757000029, 0)
 				SliderFrame.Size = UDim2.new(0, 385, 0, 8)
 
@@ -2521,7 +2521,7 @@ function DiscordLib:Window(text,keycode)
 
 				Seperator2.Name = "Seperator2"
 				Seperator2.Parent = Seperator1
-				Seperator2.BackgroundColor3 = Color3.fromRGB(66, 69, 74)
+				Seperator2.BackgroundColor3 = Color3.fromRGB(49, 51, 54)
 				Seperator2.BorderSizePixel = 0
 				Seperator2.Position = UDim2.new(0, 0, 0, 4)
 				Seperator2.Size = UDim2.new(0, 401, 0, 1)
