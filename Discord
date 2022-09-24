@@ -2005,20 +2005,22 @@ function DiscordLib:Window(text,keycode)
 							{CornerRadius = UDim.new(0, 15)}
 						):Play()
 						v.ServerWhiteFrame:TweenSize(
+							TweenInfo.new(
 							UDim2.new(0, 11, 0, 10),
 							Enum.EasingDirection.Out,
 							Enum.EasingStyle.Quart,
 							.3,
-							true
-							BackgroundColor3 = Color3.fromRGB(28, 46, 74)
+							true)
+							{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
 						)
 						ServerWhiteFrame:TweenSize(
+							TweenInfo.new(
 							UDim2.new(0, 11, 0, 46),
 							Enum.EasingDirection.Out,
 							Enum.EasingStyle.Quart,
 							.3,
-							true
-							BackgroundColor3 = Color3.fromRGB(28, 46, 74)
+							true)
+							{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
 						)
 					end
 				end
