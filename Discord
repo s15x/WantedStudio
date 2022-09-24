@@ -1738,7 +1738,7 @@ function DiscordLib:Window(text,keycode)
 		ServerWhiteFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 		ServerWhiteFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		ServerWhiteFrame.Position = UDim2.new(-0.347378343, 0, 0.502659559, 0)
-		ServerWhiteFrame.Size = UDim2.new(0, 11, 0, 10)
+		ServerWhiteFrame.Size = UDim2.new(0, 0, 0, 0)
 
 		ServerWhiteFrameCorner.CornerRadius = UDim.new(1, 0)
 		ServerWhiteFrameCorner.Name = "ServerWhiteFrameCorner"
@@ -1963,7 +1963,7 @@ function DiscordLib:Window(text,keycode)
 						{CornerRadius = UDim.new(1, 0)}
 					):Play()
 					ServerWhiteFrame:TweenSize(
-						UDim2.new(0, 11, 0, 10),
+						UDim2.new(0, 0, 0, 0),
 						Enum.EasingDirection.Out,
 						Enum.EasingStyle.Quart,
 						.3,
