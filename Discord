@@ -329,7 +329,7 @@ function DiscordLib:Window(text,keycode)
 
 	CloseBtn.MouseEnter:Connect(
 		function()
-			CloseBtn.BackgroundColor3 = Color3.fromRGB(240, 71, 71)
+			CloseBtn.BackgroundColor3 = Color3.fromRGB(127, 0, 0)
 		end
 	)
 
@@ -1942,7 +1942,7 @@ function DiscordLib:Window(text,keycode)
 						UDim2.new(0, 11, 0, 27),
 						Enum.EasingDirection.Out,
 						Enum.EasingStyle.Quart,
-						.3,
+						.2,
 						true
 					)
 				end
