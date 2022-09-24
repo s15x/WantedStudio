@@ -2010,7 +2010,7 @@ function DiscordLib:Window(text,keycode)
 							Enum.EasingStyle.Quart,
 							.3,
 							true
-							{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
+							BackgroundColor3 = Color3.fromRGB(28, 46, 74)
 						)
 						ServerWhiteFrame:TweenSize(
 							UDim2.new(0, 11, 0, 46),
@@ -2018,7 +2018,7 @@ function DiscordLib:Window(text,keycode)
 							Enum.EasingStyle.Quart,
 							.3,
 							true
-							{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
+							BackgroundColor3 = Color3.fromRGB(28, 46, 74)
 						)
 					end
 				end
