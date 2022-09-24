@@ -155,8 +155,8 @@ function DiscordLib:Window(text,keycode)
 	Title.Position = UDim2.new(0.0102790017, 0, 0, 0)
 	Title.Size = UDim2.new(0, 192, 0, 23)
 	Title.Font = Enum.Font.Gotham
-	Title.Text = text
-	Title.TextColor3 = Color3.fromRGB(99, 102, 109)
+	Title.Text = "FlerixHub" - text
+	Title.TextColor3 = Color3.fromRGB(225, 225, 225)
 	Title.TextSize = 13.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1160,7 +1160,7 @@ function DiscordLib:Window(text,keycode)
 	DiscordInfo.Position = UDim2.new(0.304721028, 0, 0.821333349, 0)
 	DiscordInfo.Size = UDim2.new(0, 133, 0, 44)
 	DiscordInfo.Font = Enum.Font.Gotham
-	DiscordInfo.Text = "Stable 1.0.0 (00001)  Host 0.0.0.1                FlerixHub Lua Engine    "
+	DiscordInfo.Text = "Stable 1.0.0 (00001)  Host 0.0.0.1                FlerixHub Lua Engine  WantedStudio.dev/FlerixHub  "
 	DiscordInfo.TextColor3 = Color3.fromRGB(101, 108, 116)
 	DiscordInfo.TextSize = 13.000
 	DiscordInfo.TextWrapped = true
