@@ -1,6 +1,6 @@
 pcall(function()
 	for i,v in next,game.CoreGui:GetChildren() do
-		if v.Name == "Discord" then
+		if v.Name == "FlerixHub" then
 			v:Destroy()
 		end
 	end
@@ -89,7 +89,7 @@ local function MakeDraggable(topbarobject, object)
 end
 
 local Discord = Instance.new("ScreenGui")
-Discord.Name = "Discord"
+Discord.Name = "FlerixHub"
 Discord.Parent = game.CoreGui
 Discord.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
