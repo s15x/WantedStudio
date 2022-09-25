@@ -155,7 +155,7 @@ function DiscordLib:Window(text,keycode)
 	Title.Position = UDim2.new(0.0102790017, 0, 0, 0)
 	Title.Size = UDim2.new(0, 192, 0, 23)
 	Title.Font = Enum.Font.Gotham
-	Title.Text = "FlerixHub" - text
+	Title.Text = "FlerixHub" text
 	Title.TextColor3 = Color3.fromRGB(225, 225, 225)
 	Title.TextSize = 13.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
