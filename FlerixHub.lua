@@ -1,3 +1,6 @@
+-- FlerixHub Discord = 'https://discord.gg/tUNgC7eG6W'
+-- Website = 'https://wantedstudio.dev'
+
 _, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 
 
