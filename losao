@@ -21,13 +21,6 @@ pcall(function()
 	userinfo = HttpService:JSONDecode(readfile("discordlibinfo.txt"));
 end)
 
-
-	while true do
-	PLXButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
-	PLRButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
-	wait(0.1)
-	end
-
 pfp = userinfo["pfp"] or "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png"
 user =  userinfo["user"] or game.Players.LocalPlayer.Name
 tag = userinfo["tag"] or tostring(math.random(1000,9999))
@@ -2236,7 +2229,10 @@ function DiscordLib:Window(text,keycode)
 				PLXButtonCorner.CornerRadius = UDim.new(0, 4)
 				PLXButtonCorner.Name = "ButtonCorner"
 				PLXButtonCorner.Parent = PLXButton
-				
+				while true do
+					PLXButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
+					wait(0.1)
+					end
 				PLXButton.MouseEnter:Connect(function()
 					TweenService:Create(
 						PLXButton,
@@ -2282,7 +2278,11 @@ function DiscordLib:Window(text,keycode)
 				PLRButtonCorner.CornerRadius = UDim.new(0, 4)
 				PLRButtonCorner.Name = "ButtonCorner"
 				PLRButtonCorner.Parent = PLR2Button
-				
+				while true do
+					PLRButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
+					wait(0.1)
+					end
+
 				PLRButton.MouseEnter:Connect(function()
 					TweenService:Create(
 						PLRButton,
