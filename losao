@@ -2262,9 +2262,7 @@ function DiscordLib:Window(text,keycode)
 				while true do
 					PLXButton.Text = game.Workspace.RapBattles.Rappers.player2.Value
 					wait(0.1)					
-					end
 			end
-
 			--- NEW BUTTON
 			function ChannelContent:PLRTWOButton(callback)
 				local PLRButton = Instance.new("TextButton")
@@ -2315,7 +2313,7 @@ function DiscordLib:Window(text,keycode)
 					PLRButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
 					wait(0.1)
 					end
-			end		
+			end	
 			function ChannelContent:Toggle(text,default,callback)
 				local toggled = false
 				local Toggle = Instance.new("TextButton")
