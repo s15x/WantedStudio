@@ -2269,8 +2269,7 @@ function DiscordLib:Window(text,keycode)
 				PLRButton.Font = Enum.Font.Gotham
 				PLRButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 				PLRButton.TextSize = 14.000
-				PLRButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
-				wait(0.1)
+				PLRButton.Text = ""
 
 				PLRButtonCorner.CornerRadius = UDim.new(0, 4)
 				PLRButtonCorner.Name = "ButtonCorner"
@@ -3379,3 +3378,9 @@ function DiscordLib:Window(text,keycode)
 	return ServerHold
 end
 return DiscordLib
+while true do
+	PLXButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
+	PLRButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
+	wait(0.1)
+	end
+	
