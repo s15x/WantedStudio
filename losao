@@ -2256,8 +2256,10 @@ function DiscordLib:Window(text,keycode)
 					):Play()
 				end)
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
+				while true do
 				PLXButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
 				wait(0.1)
+				end
 			end
 
 			function ChannelContent:PLRTWOButton(callback)
