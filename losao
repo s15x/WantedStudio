@@ -3369,7 +3369,11 @@ function DiscordLib:Window(text,keycode)
 				)
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 			end
-			
+			while true do
+				PLXButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
+				PLRButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
+				wait(0.1)
+				end			
 			return ChannelContent
 		end
 		
@@ -3378,9 +3382,3 @@ function DiscordLib:Window(text,keycode)
 	return ServerHold
 end
 return DiscordLib
-while true do
-	PLXButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
-	PLRButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
-	wait(0.1)
-	end
-	
