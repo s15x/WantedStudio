@@ -2269,15 +2269,12 @@ function DiscordLib:Window(text,keycode)
 				PLRButton.Font = Enum.Font.Gotham
 				PLRButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 				PLRButton.TextSize = 14.000
-				PLRButton.Text = ""
+				PLRButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
+				wait(0.1)
 
 				PLRButtonCorner.CornerRadius = UDim.new(0, 4)
 				PLRButtonCorner.Name = "ButtonCorner"
 				PLRButtonCorner.Parent = PLRButton
-				while true do
-					PLRButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
-					wait(0.1)
-					end
 
 				PLRButton.MouseEnter:Connect(function()
 					TweenService:Create(
