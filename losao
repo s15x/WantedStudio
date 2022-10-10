@@ -2213,57 +2213,7 @@ function DiscordLib:Window(text,keycode)
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 			end
 			-- new plr button
-			function ChannelContent:PLR1Button()
-				local PLXButton = Instance.new("TextButton")
-				local PLXButtonCorner = Instance.new("UICorner")
 
-				PLXButton.Name = "Button"
-				PLXButton.Parent = ChannelHolder
-				PLXButton.BackgroundColor3 = Color3.fromRGB(28, 46, 74)
-				PLXButton.Size = UDim2.new(0, 401, 0, 30)
-				PLXButton.AutoButtonColor = false
-				PLXButton.Font = Enum.Font.Gotham
-				PLXButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-				PLXButton.TextSize = 14.000
-				PLXButton.Text = ""
-
-				PLXButtonCorner.CornerRadius = UDim.new(0, 4)
-				PLXButtonCorner.Name = "ButtonCorner"
-				PLXButtonCorner.Parent = PLXButton
-				
-				PLXButton.MouseEnter:Connect(function()
-					TweenService:Create(
-						PLXButton,
-						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(24, 39, 63)}
-					):Play()
-				end)
-				
-				PLXButton.MouseButton1Click:Connect(function()
-					for i = 0,1 do 
-						game.Workspace.Votes:FireServer(false,"p1")
-						game:GetService("RunService").Heartbeat:Wait()
-				PLXButton.TextSize = 0
-					TweenService:Create(
-						PLXButton,
-						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{TextSize = 14}
-					):Play()
-				end)
-				
-				Button.MouseLeave:Connect(function()
-					TweenService:Create(
-						PLXButton,
-						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
-					):Play()
-				end)
-				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
-
-				while true do
-					PLXButton.Text = game.Workspace.RapBattles.Rappers.player2.Value
-					end
-			end
 			function ChannelContent:PLR1Button()
 				local PLXButton = Instance.new("TextButton")
 				local PLXButtonCorner = Instance.new("UICorner")
