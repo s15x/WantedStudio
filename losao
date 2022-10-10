@@ -2212,37 +2212,40 @@ function DiscordLib:Window(text,keycode)
 				end)
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 			end
+			-- new plr button
+			function ChannelContent:PLR1Button()
+				local PLXButton = Instance.new("TextButton")
+				local PLXButtonCorner = Instance.new("UICorner")
 
-			function ChannelContent:faxButton(text,callback)
-				local Button2 = Instance.new("TextButton")
-				local ButtonCorner2 = Instance.new("UICorner")
-				Button2.Name = "Button"
-				Button2.Parent = ChannelHolder
-				Button2.BackgroundColor3 = Color3.fromRGB(28, 46, 74)
-				Button2.Size = UDim2.new(0, 401, 0, 30)
-				Button2.AutoButtonColor = false
-				Button2.Font = Enum.Font.Gotham
-				Button2.TextColor3 = Color3.fromRGB(255, 255, 255)
-				Button2.TextSize = 14.000
-				Button2.Text = text
+				PLXButton.Name = "Button"
+				PLXButton.Parent = ChannelHolder
+				PLXButton.BackgroundColor3 = Color3.fromRGB(28, 46, 74)
+				PLXButton.Size = UDim2.new(0, 401, 0, 30)
+				PLXButton.AutoButtonColor = false
+				PLXButton.Font = Enum.Font.Gotham
+				PLXButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+				PLXButton.TextSize = 14.000
+				PLXButton.Text = ""
 
-				ButtonCorner2.CornerRadius = UDim.new(0, 4)
-				ButtonCorner2.Name = "ButtonCorner"
-				ButtonCorner2.Parent = Button2
+				PLXButtonCorner.CornerRadius = UDim.new(0, 4)
+				PLXButtonCorner.Name = "ButtonCorner"
+				PLXButtonCorner.Parent = PLXButton
 				
-				Button2.MouseEnter:Connect(function()
+				PLXButton.MouseEnter:Connect(function()
 					TweenService:Create(
-						game.Workspace.RapBattles.Rappers.player1.Value,
+						PLXButton,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 						{BackgroundColor3 = Color3.fromRGB(24, 39, 63)}
 					):Play()
 				end)
 				
-				Button2.MouseButton1Click:Connect(function()
-					pcall(callback)
-					Button2.TextSize = 0
+				PLXButton.MouseButton1Click:Connect(function()
+					for i = 0,1 do 
+						game.Workspace.Votes:FireServer(false,"p1")
+						game:GetService("RunService").Heartbeat:Wait()
+				PLXButton.TextSize = 0
 					TweenService:Create(
-						game.Workspace.RapBattles.Rappers.player1.Value,
+						PLXButton,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 						{TextSize = 14}
 					):Play()
@@ -2250,13 +2253,121 @@ function DiscordLib:Window(text,keycode)
 				
 				Button.MouseLeave:Connect(function()
 					TweenService:Create(
-						game.Workspace.RapBattles.Rappers.player1.Value,
+						PLXButton,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 						{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
 					):Play()
 				end)
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
+
+				while true do
+					PLXButton.Text = game.Workspace.RapBattles.Rappers.player2.Value
+					end
 			end
+			function ChannelContent:PLR1Button()
+				local PLXButton = Instance.new("TextButton")
+				local PLXButtonCorner = Instance.new("UICorner")
+
+				PLXButton.Name = "Button"
+				PLXButton.Parent = ChannelHolder
+				PLXButton.BackgroundColor3 = Color3.fromRGB(28, 46, 74)
+				PLXButton.Size = UDim2.new(0, 401, 0, 30)
+				PLXButton.AutoButtonColor = false
+				PLXButton.Font = Enum.Font.Gotham
+				PLXButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+				PLXButton.TextSize = 14.000
+				PLXButton.Text = ""
+
+				PLXButtonCorner.CornerRadius = UDim.new(0, 4)
+				PLXButtonCorner.Name = "ButtonCorner"
+				PLXButtonCorner.Parent = PLXButton
+				
+				PLXButton.MouseEnter:Connect(function()
+					TweenService:Create(
+						PLXButton,
+						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+						{BackgroundColor3 = Color3.fromRGB(24, 39, 63)}
+					):Play()
+				end)
+				
+				PLXButton.MouseButton1Click:Connect(function()
+					for i = 0,1 do 
+						game.Workspace.Votes:FireServer(false,"p1")
+						game:GetService("RunService").Heartbeat:Wait()
+				PLXButton.TextSize = 0
+					TweenService:Create(
+						PLXButton,
+						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+						{TextSize = 14}
+					):Play()
+				end)
+				
+				PLXButton.MouseLeave:Connect(function()
+					TweenService:Create(
+						PLXButton,
+						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+						{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
+					):Play()
+				end)
+				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
+
+				while true do
+					PLXButton.Text = game.Workspace.RapBattles.Rappers.player2.Value
+					end
+			end
+
+			--- NEW BUTTON
+			function ChannelContent:PLR2Button()
+				local PLXButton = Instance.new("TextButton")
+				local PLXButtonCorner = Instance.new("UICorner")
+
+				PLR2Button.Name = "Button"
+				PLR2Button.Parent = ChannelHolder
+				PLR2Button.BackgroundColor3 = Color3.fromRGB(28, 46, 74)
+				PLR2Button.Size = UDim2.new(0, 401, 0, 30)
+				PLR2Button.AutoButtonColor = false
+				PLR2Button.Font = Enum.Font.Gotham
+				PLR2Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+				PLR2Button.TextSize = 14.000
+				PLR2Button.Text = ""
+
+				PLR2ButtonCorner.CornerRadius = UDim.new(0, 4)
+				PLR2ButtonCorner.Name = "ButtonCorner"
+				PLR2ButtonCorner.Parent = PLR2Button
+				
+				PLR2Button.MouseEnter:Connect(function()
+					TweenService:Create(
+						PLR2Button,
+						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+						{BackgroundColor3 = Color3.fromRGB(24, 39, 63)}
+					):Play()
+				end)
+				
+				PLR2Button.MouseButton1Click:Connect(function()
+					for i = 0,1 do 
+						game.Workspace.Votes:FireServer(false,"p1")
+						game:GetService("RunService").Heartbeat:Wait()
+				PLR2Button.TextSize = 0
+					TweenService:Create(
+						PLR2Button,
+						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+						{TextSize = 14}
+					):Play()
+				end)
+				
+				PLR2Button.MouseLeave:Connect(function()
+					TweenService:Create(
+						PLR2Button,
+						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+						{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
+					):Play()
+				end)
+				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
+
+				while true do
+					PLR2Button.Text = game.Workspace.RapBattles.Rappers.player1.Value
+					end
+			end		
 			function ChannelContent:Toggle(text,default,callback)
 				local toggled = false
 				local Toggle = Instance.new("TextButton")
