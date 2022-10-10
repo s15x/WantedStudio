@@ -2262,52 +2262,52 @@ function DiscordLib:Window(text,keycode)
 				end
 			end
 
-			function ChannelContent:PLRTWOButton(callback)
-				local PLRButton = Instance.new("TextButton")
-				local PLRButtonCorner = Instance.new("UICorner")
+			function ChannelContent:PLRXXButton(callback)
+				local PLXXButton = Instance.new("TextButton")
+				local PLXXButtonCorner = Instance.new("UICorner")
 
-				PLRButton.Name = "Button"
-				PLRButton.Parent = ChannelHolder
-				PLRButton.BackgroundColor3 = Color3.fromRGB(28, 46, 74)
-				PLRButton.Size = UDim2.new(0, 401, 0, 30)
-				PLRButton.AutoButtonColor = false
-				PLRButton.Font = Enum.Font.Gotham
-				PLRButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-				PLRButton.TextSize = 14.000
-				PLRButton.Text = ""
+				PLXXButton.Name = "Button"
+				PLXXButton.Parent = ChannelHolder
+				PLXXButton.BackgroundColor3 = Color3.fromRGB(28, 46, 74)
+				PLXXButton.Size = UDim2.new(0, 401, 0, 30)
+				PLXXButton.AutoButtonColor = false
+				PLXXButton.Font = Enum.Font.Gotham
+				PLXXButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+				PLXXButton.TextSize = 14.000
+				PLXXButton.Text = ""
 
-				PLRButtonCorner.CornerRadius = UDim.new(0, 4)
-				PLRButtonCorner.Name = "ButtonCorner"
-				PLRButtonCorner.Parent = PLR2Button
+				PLXXButtonCorner.CornerRadius = UDim.new(0, 4)
+				PLXXButtonCorner.Name = "ButtonCorner"
+				PLXXButtonCorner.Parent = PLXXButton
 
-				PLRButton.MouseEnter:Connect(function()
+				PLXXButton.MouseEnter:Connect(function()
 					TweenService:Create(
-						PLRButton,
+						PLXXButton,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 						{BackgroundColor3 = Color3.fromRGB(24, 39, 63)}
 					):Play()
 				end)
 				
-				PLRButton.MouseButton1Click:Connect(function()
+				PLXXButton.MouseButton1Click:Connect(function()
 					pcall(callback)
-				PLRButton.TextSize = 0
+				PLXXButton.TextSize = 0
 					TweenService:Create(
-						PLRButton,
+						PLXXButton,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 						{TextSize = 14}
 					):Play()
 				end)
 				
-				PLRButton.MouseLeave:Connect(function()
+				PLXXButton.MouseLeave:Connect(function()
 					TweenService:Create(
-						PLRButton,
+						PLXXButton,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 						{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
 					):Play()
 				end)
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 				while true do
-				PLRButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
+				PLXXButton.Text = game.Workspace.RapBattles.Rappers.player2.Value
 				wait(0.1)
 				end
 			end
