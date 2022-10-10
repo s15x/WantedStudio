@@ -2212,7 +2212,9 @@ function DiscordLib:Window(text,keycode)
 				end)
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 			end
-			function ChannelContent:PLRONEButton()
+			-- new plr button
+
+			function ChannelContent:PLRONEButton(callback)
 				local PLXButton = Instance.new("TextButton")
 				local PLXButtonCorner = Instance.new("UICorner")
 
@@ -2229,6 +2231,7 @@ function DiscordLib:Window(text,keycode)
 				PLXButtonCorner.CornerRadius = UDim.new(0, 4)
 				PLXButtonCorner.Name = "ButtonCorner"
 				PLXButtonCorner.Parent = PLXButton
+				
 				PLXButton.MouseEnter:Connect(function()
 					TweenService:Create(
 						PLXButton,
@@ -2238,6 +2241,7 @@ function DiscordLib:Window(text,keycode)
 				end)
 				
 				PLXButton.MouseButton1Click:Connect(function()
+					pcall(callback)
 				PLXButton.TextSize = 0
 					TweenService:Create(
 						PLXButton,
@@ -2253,9 +2257,15 @@ function DiscordLib:Window(text,keycode)
 						{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
 					):Play()
 				end)
-				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)		
+				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
+
+				while true do
+					PLXButton.Text = game.Workspace.RapBattles.Rappers.player2.Value
+					wait(0.1)					
+					end
 			end
 
+			--- NEW BUTTON
 			function ChannelContent:PLRTWOButton(callback)
 				local PLRButton = Instance.new("TextButton")
 				local PLRButtonCorner = Instance.new("UICorner")
@@ -2272,8 +2282,8 @@ function DiscordLib:Window(text,keycode)
 
 				PLRButtonCorner.CornerRadius = UDim.new(0, 4)
 				PLRButtonCorner.Name = "ButtonCorner"
-				PLRButtonCorner.Parent = PLRButton
-
+				PLRButtonCorner.Parent = PLR2Button
+				
 				PLRButton.MouseEnter:Connect(function()
 					TweenService:Create(
 						PLRButton,
@@ -2300,8 +2310,12 @@ function DiscordLib:Window(text,keycode)
 					):Play()
 				end)
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
-			end
 
+				while true do
+					PLRButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
+					wait(0.1)
+					end
+			end		
 			function ChannelContent:Toggle(text,default,callback)
 				local toggled = false
 				local Toggle = Instance.new("TextButton")
@@ -3366,13 +3380,9 @@ function DiscordLib:Window(text,keycode)
 					end
 				end
 				)
-				while true do
-					PLRXButton.Text = game.Workspace.RapBattles.Rappers.player.Value
-					PLRButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
-					wait(0.1)
-				end	
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
-			end		
+			end
+			
 			return ChannelContent
 		end
 		
