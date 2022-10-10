@@ -2214,7 +2214,7 @@ function DiscordLib:Window(text,keycode)
 			end
 			-- new plr button
 
-			function ChannelContent:PLRONEButton()
+			function ChannelContent:PLRONEButton(callback)
 				local PLXButton = Instance.new("TextButton")
 				local PLXButtonCorner = Instance.new("UICorner")
 
@@ -2266,7 +2266,7 @@ function DiscordLib:Window(text,keycode)
 			end
 
 			--- NEW BUTTON
-			function ChannelContent:lolButton(callback)
+			function ChannelContent:PLRTWOButton(callback)
 				local PLRButton = Instance.new("TextButton")
 				local PLRButtonCorner = Instance.new("UICorner")
 
