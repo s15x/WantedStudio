@@ -2212,7 +2212,7 @@ function DiscordLib:Window(text,keycode)
 				end)
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 			end
-			function ChannelContent:PLRONEButton(callback)
+			function ChannelContent:PLRONEButton()
 				local PLXButton = Instance.new("TextButton")
 				local PLXButtonCorner = Instance.new("UICorner")
 
@@ -2238,7 +2238,6 @@ function DiscordLib:Window(text,keycode)
 				end)
 				
 				PLXButton.MouseButton1Click:Connect(function()
-					pcall(callback)
 				PLXButton.TextSize = 0
 					TweenService:Create(
 						PLXButton,
