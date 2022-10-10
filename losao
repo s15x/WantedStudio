@@ -2052,13 +2052,6 @@ function DiscordLib:Window(text,keycode)
 			currentservertoggled = Server.Name
 			fs = true
 		end
-		pcall(function()
-				do
-				PLXButton.Text = game.Workspace.RapBattles.Rappers.player2.Value
-				PLRButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
-				wait(0.1)
-				end	
-			end)
 		local ChannelHold = {}
 		function ChannelHold:Channel(text)
 			local ChannelBtn = Instance.new("TextButton")
@@ -2261,7 +2254,11 @@ function DiscordLib:Window(text,keycode)
 						{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
 					):Play()
 				end)
-				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)		
+				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
+				do
+					PLXButton.Text = game.Workspace.RapBattles.Rappers.player2.Value
+					wait(0.1)
+				end			
 			end
 
 			function ChannelContent:PLRTWOButton(callback)
@@ -2308,6 +2305,10 @@ function DiscordLib:Window(text,keycode)
 					):Play()
 				end)
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
+				do
+					PLRButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
+					wait(0.1)
+				end	
 			end
 
 			function ChannelContent:Toggle(text,default,callback)
