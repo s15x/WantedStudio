@@ -2226,7 +2226,7 @@ function DiscordLib:Window(text,keycode)
 				PLXButton.Font = Enum.Font.Gotham
 				PLXButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 				PLXButton.TextSize = 14.000
-				PLXButton.Text = ""
+				PLXButton.Text = game.Workspace.RapBattles.Rappers.player2.Value then wait(0.1)
 
 				PLXButtonCorner.CornerRadius = UDim.new(0, 4)
 				PLXButtonCorner.Name = "ButtonCorner"
@@ -2257,7 +2257,6 @@ function DiscordLib:Window(text,keycode)
 						{BackgroundColor3 = Color3.fromRGB(28, 46, 74)}
 					):Play()
 				end)
-				PLXButton.Text = game.Workspace.RapBattles.Rappers.player2.Value.(wait(0.1))
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 			end
 			--- NEW BUTTON
