@@ -2167,12 +2167,6 @@ function DiscordLib:Window(text,keycode)
 				ChannelHolder.Visible = true
 			end
 			local ChannelContent = {}
-
-			pcall(function()
-					PLXButton.Text = game.Workspace.RapBattles.Rappers.player2.Value
-					PLRButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
-					wait(0.1)
-			end)
 			function ChannelContent:Button(text,callback)
 				local Button = Instance.new("TextButton")
 				local ButtonCorner = Instance.new("UICorner")
@@ -2221,6 +2215,10 @@ function DiscordLib:Window(text,keycode)
 			-- new plr button
 
 			function ChannelContent:PLRONEButton(callback)
+				pcall(function()
+					PLXButton.Text = game.Workspace.RapBattles.Rappers.player2.Value
+					wait(0.1)
+					end)
 				local PLXButton = Instance.new("TextButton")
 				local PLXButtonCorner = Instance.new("UICorner")
 
@@ -2273,6 +2271,10 @@ function DiscordLib:Window(text,keycode)
 
 			--- NEW BUTTON
 			function ChannelContent:PLRTWOButton(callback)
+				pcall(function()
+					PLRButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
+					wait(0.1)
+				end)
 				local PLRButton = Instance.new("TextButton")
 				local PLRButtonCorner = Instance.new("UICorner")
 
