@@ -2226,10 +2226,8 @@ function DiscordLib:Window(text,keycode)
 				PLXButton.Font = Enum.Font.Gotham
 				PLXButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 				PLXButton.TextSize = 14.000
-				while true do
-				PLXButton.Text = game.Workspace.RapBattles.Rappers.player2.Value
-				wait(0.1)
-				end
+				PLXButton.Text = ""
+
 				PLXButtonCorner.CornerRadius = UDim.new(0, 4)
 				PLXButtonCorner.Name = "ButtonCorner"
 				PLXButtonCorner.Parent = PLXButton
@@ -2278,7 +2276,7 @@ function DiscordLib:Window(text,keycode)
 
 				PLRButtonCorner.CornerRadius = UDim.new(0, 4)
 				PLRButtonCorner.Name = "ButtonCorner"
-				PLRButtonCorner.Parent = PLR2Button
+				PLRButtonCorner.Parent = PLRButton
 				
 				PLRButton.MouseEnter:Connect(function()
 					TweenService:Create(
@@ -3371,6 +3369,11 @@ function DiscordLib:Window(text,keycode)
 					end
 				end
 				)
+				while true do
+					PLXButton.Text = game.Workspace.RapBattles.Rappers.player2.Value
+					PLRButton.Text = game.Workspace.RapBattles.Rappers.player1.Value
+					wait(0.1)
+					end
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 			end
 			
